@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Warframe Nexus - Warframe Menu</title>
+  <style>
+    body {
+      background-color: #0b0c10;
+      color: #c5c6c7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #1f2833;
+      text-align: center;
+      padding: 15px;
+      border-bottom: 3px solid #66fcf1;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+    nav a {
+      color: #45a29e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a.active {
+      color: #66fcf1;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #66fcf1;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .warframe-card {
+      background-color: #1f2833;
+      border: 2px solid #66fcf1;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .warframe-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 10px #66fcf1aa;
+    }
+    .warframe-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .warframe-card .info {
+      padding: 15px;
+    }
+    .warframe-card h3 {
+      color: #45a29e;
+      margin: 0 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Warframe Nexus</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>Choose Your Warframe</h2>
+    <p>Each Warframe possesses unique abilities and strengths. Select the one that fits your playstyle!</p>
+
+    <div class="grid">
+      <!-- Excalibur -->
+      <div class="warframe-card">
+        <img src="C:\WARFRAME WEBSITE\Warframe website\IMAGES\excal.jpg" alt="Excalibur">
+        <div class="info">
+          <h3>Excalibur</h3>
+          <p>A balanced frame with powerful melee skills. Perfect for new Tenno.</p>
+          <p><em>Signature Ability: Exalted Blade</em></p>
+        </div>
+      </div>
+
+      <!-- Mag -->
+      <div class="warframe-card">
+        <img src="C:\WARFRAME WEBSITE\Warframe website\IMAGES\mag.jpg" alt="Mag">
+        <div class="info">
+          <h3>Mag</h3>
+          <p>Manipulates magnetic energy to crush her enemies and shield allies.</p>
+          <p><em>Signature Ability: Magnetize</em></p>
+        </div>
+      </div>
+
+      <!-- Volt -->
+      <div class="warframe-card">
+        <img src="C:\WARFRAME WEBSITE\Warframe website\IMAGES\volt.jpg" alt="Volt">
+        <div class="info">
+          <h3>Volt</h3>
+          <p>Harnesses electricity to stun enemies and boost allies' speed and damage.</p>
+          <p><em>Signature Ability: Discharge</em></p>
+        </div>
+      </div>
+
+      <!-- Rhino -->
+      <div class="warframe-card">
+        <img src="C:\WARFRAME WEBSITE\Warframe website\IMAGES\rhino.jpg_large" alt="Rhino">
+        <div class="info">
+          <h3>Rhino</h3>
+          <p>Charges into battle with brute force, offering immense defense and damage output.</p>
+          <p><em>Signature Ability: Iron Skin</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Warframe Nexus. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

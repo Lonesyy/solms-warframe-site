@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Warframe Nexus - Dashboard</title>
+</head>
+<body style="background-color:#0b0c10; color:#c5c6c7; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:0;">
+
+  <!-- Top Image -->
+  <div style="text-align:center; background-color:#1f2833; padding:10px;">
+    <img src="C:\\WARFRAME WEBSITE\\Warframe website\\IMAGES\\warframe banner.jpg" alt="Warframe Logo Banner" style="width:100%; max-height:250px; object-fit:cover;"/>
+  </div>
+
+  <!-- Header -->
+  <header style="background-color:#1f2833; padding:20px; text-align:center; border-bottom:3px solid #66fcf1;">
+    <h1 style="color:#66fcf1; font-size:2.5em;">Warframe Nexus</h1>
+    <nav>
+      <ul style="list-style:none; display:flex; justify-content:center; gap:25px; flex-wrap:wrap; padding:0;">
+        <li><a href="index.html" style="color:#45a29e; text-decoration:none; font-weight:bold;">Home</a></li>
+        <li><a href="menu.html" style="color:#45a29e; text-decoration:none; font-weight:bold;">Menu</a></li>
+        <li><a href="gallery.html" style="color:#45a29e; text-decoration:none; font-weight:bold;">Gallery</a></li>
+        <li><a href="about.html" style="color:#45a29e; text-decoration:none; font-weight:bold;">About Us</a></li>
+        <li><a href="contact.html" style="color:#45a29e; text-decoration:none; font-weight:bold;">Contact Us</a></li>
+        <li><a href="dashboard.html" style="color:#66fcf1; text-decoration:none; font-weight:bold;">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main style="padding:40px 20px; max-width:900px; margin:auto; color:#c5c6c7;">
+    <h2 style="color:#66fcf1; margin-bottom:20px;">Your Warframe Dashboard</h2>
+    <p>Track your progress, stats, and achievements here.</p>
+
+    <!-- Sample stats -->
+    <section style="margin-top:30px;">
+      <h3 style="color:#45a29e;">Current Rank: Master</h3>
+      <p>Experience Points: 12,345,678</p>
+      <p>Completed Missions: 256</p>
+      <p>Collected Mods: 143</p>
+      <p>Achievements Unlocked: 27</p>
+    </section>
+  </main>
+
+  <!-- Floating Side Note -->
+  <div id="floating-tip" style="
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: #45a29e;
+    color: #0b0c10;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+    font-size: 0.95em;
+    z-index: 1000;
+    cursor: default;
+    max-width: 200px;
+    user-select: none;
+  ">
+    <strong>Tip:</strong> Loading tip...
+  </div>
+
+  <script>
+    const tips = {
+      'index.html': "Stay tuned for alerts and new Warframe releases!",
+      'menu.html': "Explore new Warframes to master unique abilities!",
+      'gallery.html': "Check out the latest Warframe fan art and videos!",
+      'about.html': "Learn about the Warframe Nexus community!",
+      'contact.html': "Reach out if you have any questions or feedback!",
+      'dashboard.html': "Manage your Warframe stats and progress here!"
+    };
+    const currentPage = window.location.pathname.split("/").pop() || 'index.html';
+    const tipText = tips[currentPage] || "Welcome to Warframe Nexus!";
+    document.getElementById('floating-tip').innerHTML = "<strong>Tip:</strong> " + tipText;
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const viewportHeight = window.innerHeight;
+      const tip = document.getElementById('floating-tip');
+      let newTop = 50 + scrollY / viewportHeight * 40;
+      if (newTop > 90) newTop = 90;
+      if (newTop < 10) newTop = 10;
+      tip.style.top = newTop + 'vh';
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer style="background-color:#1f2833; color:#c5c6c7; text-align:center; padding:15px; border-top:2px solid #66fcf1;">
+    <p>&copy; 2025 Warframe Nexus. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Warframe Nexus - Home</title>
+  <style>
+    a {
+      color: #45a29e;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    a:hover {
+      color: #66fcf1;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #c5c6c7;
+    }
+    /* Temporary highlight after clicking */
+    a.used {
+      color: #f39c12 !important; /* bright orange */
+      text-decoration: underline !important;
+      font-weight: bolder !important;
+    }
+  </style>
+</head>
+<body style="background-color:#0b0c10; color:#c5c6c7; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:0;">
+
+  <!-- Top Image -->
+  <div style="text-align:center; background-color:#1f2833; padding:10px;">
+    <img src="C:\\WARFRAME WEBSITE\\Warframe website\\IMAGES\\warframe banner.jpg" alt="Warframe Logo Banner" style="width:100%; max-height:250px; object-fit:cover;" />
+  </div>
+
+  <!-- Header -->
+  <header style="background-color:#1f2833; padding:20px; text-align:center; border-bottom:3px solid #66fcf1;">
+    <h1 style="color:#66fcf1; font-size:2.5em;">Warframe Nexus</h1>
+    <nav>
+      <ul style="list-style:none; display:flex; justify-content:center; gap:25px; flex-wrap:wrap; padding:0;">
+        <li><a href="index.html" style="color:#66fcf1; text-decoration:none; font-weight:bold;">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner Image Below Header -->
+  <div style="text-align:center; background-color:#0b0c10; padding:10px;">
+    <img src="C:\\WARFRAME WEBSITE\\Warframe website\\IMAGES\\key art.jpg" alt="Warframe Key Art" style="width:70%; max-height:500px; object-fit:cover;" />
+  </div>
+
+  <!-- Main Content -->
+  <main style="display:flex; justify-content:space-between; padding:40px 20px; max-width:1200px; margin:auto;">
+
+    <!-- Welcome Text -->
+    <section style="flex:2; padding-right:30px;">
+      <h2 style="color:#66fcf1; font-size:2em; margin-bottom:20px;">Welcome, Tenno</h2>
+      <p style="font-size:1.1em; line-height:1.7;">
+        Welcome to <strong>Warframe Nexus</strong> — your gateway to the Origin System. This is more than just a fan site; 
+        it's a gathering place for Tenno around the world. Built by players, for players, Warframe Nexus offers news updates, 
+        beginner guides, community-created content, clan support, fan art, and lore discussions.
+      </p>
+      <p style="font-size:1.1em; line-height:1.7;">
+        Whether you're a seasoned veteran mastering Kuva builds and Railjack missions or a new player just awakening to the Lotus' call,
+        this space is crafted to help you evolve. Discover best-in-slot builds, share your FashionFrame styles, and contribute to one of the most welcoming 
+        and active game communities out there. We believe that Warframe isn’t just a game—it’s a universe, a story, and a bond between space ninjas that transcends platforms.
+      </p>
+      <p style="font-size:1.1em; line-height:1.7;">
+        Our goal is to help every Tenno thrive. From alerts to events, from Devstreams to hotfixes, this site is your landing craft's console when you're away from the game. 
+        Stay informed, stay connected, and remember: <em>the Tenno live.</em>
+      </p>
+
+      <!-- New Links Section with temporary highlight -->
+      <div id="quick-links" style="margin-top:40px; padding:20px; background-color:#1f2833; border-radius:8px; box-shadow: 0 0 10px rgba(0,255,255,0.1);">
+        <h3 style="color:#66fcf1;">Quick Links</h3>
+        <ul style="list-style:none; padding-left:0;">
+          <li><a href="https://www.warframe.com/patch-notes" target="_blank">Patch Notes</a></li>
+          <li><a href="https://www.warframe.com/search" target="_blank">Official News</a></li>
+          <li><a href="https://forums.warframe.com/" target="_blank">Warframe Forums</a></li>
+          <li><a href="https://wiki.warframe.com/" target="_blank">Warframe Wiki</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Goals Sidebar -->
+    <aside style="flex:1; background-color:#1f2833; border-left:3px solid #66fcf1; padding:20px; border-radius:8px; box-shadow:0 0 10px rgba(0,255,255,0.1); height:fit-content;">
+      <h3 style="color:#66fcf1; margin-top:0;">Goals</h3>
+      <ul style="list-style:square; color:#c5c6c7; padding-left:20px;">
+        <li>Support Tenno with guides and updates</li>
+        <li>Showcase Warframe art, clips, and mods</li>
+        <li>Host community events and giveaways</li>
+        <li>Connect new and veteran players</li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Bottom Image -->
+  <div style="text-align:center; background-color:#0b0c10; padding:10px;">
+    <img src="C:\\WARFRAME WEBSITE\\Warframe website\\IMAGES\\universe art.jpg" alt="Warframe Universe Art" style="width:70%; max-height:500px; object-fit:cover;" />
+  </div>
+
+  <!-- Floating Side Note -->
+  <div
+    id="floating-tip"
+    style="
+      position: fixed;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      background-color: #45a29e;
+      color: #0b0c10;
+      padding: 10px 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+      font-size: 0.95em;
+      z-index: 1000;
+      cursor: default;
+      max-width: 200px;
+      user-select: none;
+    "
+  >
+    <strong>Tip:</strong> Loading tip...
+  </div>
+
+  <script>
+    // Tips per page
+    const tips = {
+      "index.html":
+        "Stay tuned for alerts and new Warframe releases!",
+      "menu.html": "Explore new Warframes to master unique abilities!",
+      "gallery.html": "Check out the latest Warframe fan art and videos!",
+      "about.html": "Learn about the Warframe Nexus community!",
+      "contact.html": "Reach out if you have any questions or feedback!",
+      "dashboard.html": "Manage your Warframe stats and progress here!",
+    };
+
+    // Get current page filename
+    const currentPage =
+      window.location.pathname.split("/").pop() || "index.html";
+
+    // Set tip text based on page or default
+    const tipText = tips[currentPage] || "Welcome to Warframe Nexus!";
+
+    // Update the floating tip content
+    document.getElementById("floating-tip").innerHTML =
+      "<strong>Tip:</strong> " + tipText;
+
+    // Move the floating tip vertically with scroll
+    window.addEventListener("scroll", () => {
+      const scrollY = window.scrollY;
+      const viewportHeight = window.innerHeight;
+      const tip = document.getElementById("floating-tip");
+      let newTop = 50 + (scrollY / viewportHeight) * 40;
+      if (newTop > 90) newTop = 90;
+      if (newTop < 10) newTop = 10;
+      tip.style.top = newTop + "vh";
+    });
+
+    // Temporary used highlight on clicked links in quick-links only
+    document.querySelectorAll("#quick-links a").forEach((link) => {
+      link.addEventListener("click", function () {
+        this.classList.add("used");
+        setTimeout(() => this.classList.remove("used"), 5000);
+      });
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer
+    style="
+      background-color: #1f2833;
+      color: #c5c6c7;
+      text-align: center;
+      padding: 15px;
+      border-top: 2px solid #66fcf1;
+    "
+  >
+    <p>&copy; 2025 Warframe Nexus. All rights reserved.</p>
+  </footer>
+</body>
+</html>
